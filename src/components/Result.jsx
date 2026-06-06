@@ -347,10 +347,10 @@ export default function Result({ scores, onRetry }) {
       <AdBanner type="large-box" />
 
       {/* Navigation Options */}
-      <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-        <button className="btn-secondary" onClick={onRetry} style={{ padding: "1rem" }}>
-          <RefreshCw size={16} />
-          테스트 다시 시작하기
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginTop: "1rem" }}>
+        <button className="btn-primary" onClick={onRetry} style={{ padding: "1.125rem", fontSize: "1.1rem" }}>
+          <RefreshCw size={18} />
+          테스트 다시 하기
         </button>
       </div>
       

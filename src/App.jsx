@@ -49,6 +49,13 @@ export default function App() {
     setScreen("test");
   };
 
+  const handleRetry = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setTimeout(() => {
+      window.location.reload();
+    }, 450);
+  };
+
   const handleFinishTest = (answersList) => {
     // answersList is an array of letters (e.g. ['E', 'I', 'S', ...])
     const finalScores = { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 };
@@ -124,7 +131,7 @@ export default function App() {
       {screen === "result" && (
         <Result 
           scores={scores} 
-          onRetry={handleStartTest} 
+          onRetry={handleRetry} 
         />
       )}
 

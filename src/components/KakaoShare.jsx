@@ -3,7 +3,7 @@
  */
 
 // Replace this with your actual Kakao Javascript App Key from Kakao Developers console.
-export const KAKAO_APP_KEY = "YOUR_KAKAO_APP_KEY"; 
+export const KAKAO_APP_KEY = "26b7fb3461677345eb2fc5201b5c1a37"; 
 
 export const initKakao = () => {
   if (window.Kakao) {

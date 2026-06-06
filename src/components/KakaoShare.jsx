@@ -26,6 +26,9 @@ export const initKakao = () => {
 };
 
 export const shareMbtiResult = (mbtiCode, title, tagline) => {
+  // Ensure Kakao is initialized
+  initKakao();
+
   const shareText = `나의 MBTI 유형은 [${mbtiCode} - ${title}] 입니다!\n"${tagline}"\n\n무료 MBTI 테스트 하러 가기: ${window.location.origin}`;
 
   // Check if Kakao is available and initialized
